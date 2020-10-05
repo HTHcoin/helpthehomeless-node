@@ -1,14 +1,14 @@
 Helpthehomeless Node
 ============
 
-A Helpthehomeless full node for building applications and services with Node.js. A node is extensible and can be configured to run additional services. At the minimum a node has an interface to [Helpthehomeless Core (helpthehomelessd) v0.14.0](https://github.com/Altcoin-Cash/helpthehomelesscoin/tree/v0.14.0.x) for more advanced address queries. Additional services can be enabled to make a node more useful such as exposing new APIs, running a block explorer and wallet service.
+A Helpthehomeless full node for building applications and services with Node.js. A node is extensible and can be configured to run additional services. At the minimum a node has an interface to [Helpthehomeless Core (helpthehomelessd) v0.14.0](https://github.com/hthcoin/helpthehomelesscoin/tree/v0.14.0.x) for more advanced address queries. Additional services can be enabled to make a node more useful such as exposing new APIs, running a block explorer and wallet service.
 
 ## Usages
 
 ### As a standalone server
 
 ```bash
-git clone https://github.com/Altcoin-Cash/helpthehomeless-node
+git clone https://github.com/hthcoin/helpthehomeless-node
 cd helpthehomeless-node
 npm install
 ./bin/helpthehomeless-node start
@@ -19,8 +19,8 @@ If it doesn't exist, it will create it, with basic task to connect to helpthehom
 
 Some plugins are available :
 
-- Insight-API : `./bin/helpthehomeless-node addservice @Altcoin-Cash/insight-api`
-- Insight-UI : `./bin/helpthehomeless-node addservice @Altcoin-Cash/insight-ui`
+- Insight-API : `./bin/helpthehomeless-node addservice @hthcoin/insight-api`
+- Insight-UI : `./bin/helpthehomeless-node addservice @hthcoin/insight-ui`
 
 You also might want to add these index to your helpthehomeless.conf file :
 ```
@@ -32,11 +32,11 @@ You also might want to add these index to your helpthehomeless.conf file :
 ### As a library
 
 ```bash
-npm install @Altcoin-Cash/helpthehomeless-node
+npm install @hthcoin/helpthehomeless-node
 ```
 
 ```javascript
-const helpthehomeless = require('@Altcoin-Cash/helpthehomeless-node');
+const helpthehomeless = require('@hthcoin/helpthehomeless-node');
 const config = require('./helpthehomeless-node.json');
 
 let node = helpthehomeless.scaffold.start({ path: "", config: config });
@@ -70,7 +70,7 @@ helpthehomeless-node start
 
 This will create a directory with configuration files for your node and install the necessary dependencies.
 
-Please note that [Helpthehomeless Core](https://github.com/Altcoin-Cash/helpthehomelesscoin/tree/master) needs to be installed first.
+Please note that [Helpthehomeless Core](https://github.com/hthcoin/helpthehomelesscoin/tree/master) needs to be installed first.
 
 For more information about (and developing) services, please see the [Service Documentation](docs/services.md).
 
@@ -78,9 +78,9 @@ For more information about (and developing) services, please see the [Service Do
 
 There are several add-on services available to extend the functionality of Bitcore:
 
-- [Insight API](https://github.com/Altcoin-Cash/insight-api/tree/master)
-- [Insight UI](https://github.com/Altcoin-Cash/insight-ui/tree/master)
-- [Bitcore Wallet Service](https://github.com/Altcoin-Cash/helpthehomeless-wallet-service/tree/master)
+- [Insight API](https://github.com/hthcoin/insight-api/tree/master)
+- [Insight UI](https://github.com/hthcoin/insight-ui/tree/master)
+- [Bitcore Wallet Service](https://github.com/hthcoin/helpthehomeless-wallet-service/tree/master)
 
 ## Documentation
 
@@ -98,9 +98,9 @@ There are several add-on services available to extend the functionality of Bitco
 
 Prerequisite : Having a helpthehomelessd node already runing `helpthehomelessd --daemon`.
 
-Helpthehomeless-node : `git clone https://github.com/Altcoin-Cash/helpthehomeless-node -b develop`
-Insight-api (optional) : `git clone https://github.com/Altcoin-Cash/insight-api -b develop`
-Insight-UI (optional) : `git clone https://github.com/Altcoin-Cash/insight-ui -b develop`
+Helpthehomeless-node : `git clone https://github.com/hthcoin/helpthehomeless-node -b develop`
+Insight-api (optional) : `git clone https://github.com/hthcoin/insight-api -b develop`
+Insight-UI (optional) : `git clone https://github.com/hthcoin/insight-ui -b develop`
 
 Install them :
 ```
@@ -116,17 +116,17 @@ npm link ../insight-ui
 ```
 
 Start with `./bin/helpthehomeless-node start` to first generate a ~/.helpthehomeless/helpthehomeless-node.json file.
-Append this file with `"@Altcoin-Cash/insight-ui"` and `"@Altcoin-Cash/insight-api"` in the services array.
+Append this file with `"@hthcoin/insight-ui"` and `"@hthcoin/insight-api"` in the services array.
 
 ## Contributing
 
-Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/Altcoin-Cash/helpthehomelesscoin/blob/master/CONTRIBUTING.md) file.
+Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/hthcoin/helpthehomelesscoin/blob/master/CONTRIBUTING.md) file.
 
 ## License
 
-Code released under [the MIT license](https://github.com/Altcoin-Cash/helpthehomeless-node/blob/master/LICENSE).
+Code released under [the MIT license](https://github.com/hthcoin/helpthehomeless-node/blob/master/LICENSE).
 
 Copyright 2020 Help The Homeless Developers
-Copyright 2016-2018 Dasg Core Group, Inc.
+Copyright 2016-2018 Dash Core Group, Inc.
 
 - bitcoin: Copyright (c) 2009-2015 Bitcoin Core Developers (MIT License)
