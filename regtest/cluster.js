@@ -4,9 +4,9 @@ var path = require('path');
 var async = require('async');
 var spawn = require('child_process').spawn;
 
-var DashdRPC = require('@dashevo/dashd-rpc');
+var DashdRPC = require('@HTHcoin/helpthehomelessd-rpc');
 var rimraf = require('rimraf');
-var dashcore = require('@dashevo/dashcore-lib');
+var dashcore = require('@HTHcoin/helpthehomeless-lib');
 var chai = require('chai');
 var should = chai.should();
 
