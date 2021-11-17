@@ -94,8 +94,8 @@ describe('#add', function() {
       var callCount = 0;
       var oldPackage = {
         dependencies: {
-          '@dashevo/dashcore-lib': '^v0.15.4',
-          '@dashevo/dashcore-node': '^v3.0.7'
+          '@HTHcoin/helpthehomeless-lib': '^v0.15.4',
+          '@HTHcoin/helpthehomeless-node': '^v3.0.7'
         }
       };
       var spawn = sinon.stub().returns({
