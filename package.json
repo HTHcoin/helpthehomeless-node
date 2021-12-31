@@ -1,5 +1,5 @@
 {
-  "name": "helpthehomeless-node",
+  "name": "@HTHcoin/helpthehomeless-node",
   "description": "Full node with extended capabilities using Helpthehomeless and Helpthehomeless Core (helpthehomelessd)",
   "author": "BitPay <dev@bitpay.com>",
   "version": "5.1.4",
