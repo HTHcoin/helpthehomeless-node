@@ -43,7 +43,7 @@
     "helpthehomelessd"
   ],
   "dependencies": {
-    "helpthehomeless-lib",
+    "helpthehomelessd-lib":"helpthehomeless-lib",
     "helpthehomelessd-rpc":"helpthehomelessd-rpc"
     "async": "^2.6.2",
     "body-parser": "^1.19.0",
