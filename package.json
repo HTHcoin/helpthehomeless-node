@@ -65,7 +65,7 @@
     "utf-8-validate": "~5.0.2"
   },
   "devDependencies": {
-    "helpthehomelessp2p":"helpthehomeless-p2p",
+    "helpthehomelessp2p":"HTHcoin/helpthehomeless-p2p#master",
     "benchmark": "2.1.4",
     "chai": "^4.2.0",
     "coveralls": "^3.0.4",
