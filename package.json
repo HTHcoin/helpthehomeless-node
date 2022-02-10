@@ -45,8 +45,8 @@
   "dependencies": {
     "helpthehomeless-lib": "HTHcoin/helpthehomeless-lib#master",
     "helpthehomelessd-rpc": "HTHcoin/helpthehomelessd-rpc#master",
-    "insight-api": "HTHcoin/insight-api#master",
-    "insight-ui": "HTHcoin/insight-ui#master",
+    "insight-api": "HTHcoin/insight-api",
+    "insight-ui": "HTHcoin/insight-ui",
     "async": "^2.6.2",
     "body-parser": "^1.19.0",
     "colors": "^1.3.3",
