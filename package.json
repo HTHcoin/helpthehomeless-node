@@ -47,7 +47,7 @@
     "helpthehomelessd-rpc": "HTHcoin/helpthehomelessd-rpc#master",
     "async": "^2.6.2",
     "body-parser": "^1.19.0",
-    "colors": "^1.3.3",
+    "color": "^4.2.3",
     "commander": "^2.20.0",
     "errno": "^0.1.7",
     "express": "^4.17.1",
